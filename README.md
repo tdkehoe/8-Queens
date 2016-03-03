@@ -1,6 +1,6 @@
 # 8 Queens
 
-This was a technical interview assignment. In the [Eight Queens Puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle) you put eight queens on a chessboard, all in safe positions. It's usually solved with a recursive algorithm but I don't know recursive programming so I wrote a program that places seven queens on the board, and another program that places eight rooks on the board.
+This was a technical interview assignment. In the [Eight Queens Puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle) you put eight queens on a chessboard, all in safe positions. It's usually solved with a recursive algorithm but I don't know recursive programming so I wrote a JavaScript program that places seven queens on the board, and another JavaScript program that places eight rooks on the board.
 
 First I wrote ```8_Rooks.js```:
 
@@ -9,7 +9,7 @@ R - - - - - - -
 - R - - - - - -
 - - R - - - - -
 - - - R - - - -
- - - - - R - - -
+- - - - R - - -
 - - - - - R - -
 - - - - - - R -
 - - - - - - - R
@@ -55,7 +55,7 @@ Finally I abstracted the eight singles ```for``` loops into a single third-level
 * ```8_Rooks_2ndLoop.js``` (triple nested loops) is 26 lines.
 
 As much as I enjoy programming challenges like this, in my experience JavaScript is more about connecting resources, e.g., getting Node's ```app.js``` to talk to the ```express.Router``` module while each route uses the Mongoose Node module to query the MongoDB database and then sends the data as a JSON object to the API so that the Angular front-end can receive the data, then setting up two-way data binding so that Angular can display
-the data in the views, which are controlled by Angular's router, etc. The challenges are choosing components that will work well together and getting them to talk to each other. Five months after graduation my classmates are still slacking each other asking which components work best with other components.
+the data in the views, which are controlled by Angular's router, etc. Most projects have a dozen or more components. The challenges are choosing components that will work well together and getting them to talk to each other. Five months after graduation my classmates are still slacking each other asking which components work best with other components.
 
 For my [Galvanize capstone project](https://github.com/tdkehoe/peerjs) I hooked up WebRTC video conferencing with a cloud database (Firebase) to give Angular five-way data binding (two users each with two-way data binding connected via AngularFire cloud data binding). You can go to the website, see a list of players waiting for a game, click a name and open a video conference window, then play a tic-tac-toe game with the other user. The code isn't pretty and it's just a tic-tac-toe game but our Director of Instruction told me that his jaw dropped when I demo'd it at our Hiring Day.
 
