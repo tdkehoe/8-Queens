@@ -1,1 +1,2 @@
-# 8queeens
+# 8 Queens
+
